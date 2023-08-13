@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+
+
+        header {
+
+            background-color: #2874f0;
+            display: flex;
+        }
+
+        ul {
+
+            display: flex;
+
+            height: 10vh;
+            align-items: center;
+            margin-left: 50px;
+
+        }
+
+        nav {
+            display: flex;
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        ul li a {
+            text-decoration: none;
+            padding: 10px;
+            font-size: large;
+            color: white;
+
+
+        }
+
+
+
+        ul li a:hover {
+            font-weight: bolder;
+        }
+
+        #lol {
+            width: 105px;
+            height: 30px;
+            margin-left: 25px;
+            margin-top: 14px;
+
+
+
+        }
+
+
+
+
+        .search {
+            margin-left: 100px;
+            display: flex;
+            align-items: center;
+        }
+
+        #a {
+            width: 400px;
+            height: 3vh;
+            border-radius: 5px;
+        }
+
+        #b {
+            width: 90px;
+            height: 3.4vh;
+            color: #2874f0;
+            border-radius: 5px;
+            margin-left: 10px;
+
+        }
+
+
+
+        #b:hover {
+            cursor: pointer;
+            font-weight: bolder;
+
+
+
+        }
+
+
+
+
+        footer p {
+            height: 8vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background-color: #2874f0;
+        }
+
+
+
+        .slider {
+            width: 80vw;
+            margin: 12px auto;
+            overflow: hidden;
+            margin-bottom: 0px;
+            height: 406px;
+        }
+
+        .rao {
+            margin-bottom: 25px;
+
+        }
+
+        .box1 {
+            border: 1px solid;
+            margin: 25px auto;
+
+        }
+
+
+        .meow {
+            display: inline-flex;
+            flex-direction: column;
+            padding: 20px;
+            margin: 0px 0px 0px 5px;
+
+        }
+
+        .meow .pola button {
+            cursor: pointer;
+        }
+
+        .meow .pola button:hover {
+            cursor: pointer;
+            font-weight: bolder;
+            color: red;
+            background-color: black;
+        }
+
+        .hello {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+            margin-top: 25px;
+            margin-bottom: 25px;
+
+
+
+        }
+
+
+
+
+        .bro {
+            display: flex;
+        }
+
+        #kya {
+            margin: 25px;
+            font-weight: bolder;
+            font-size: 24px;
+        }
+
+        .email {
+            display: flex;
+        }
+
+        #oyo {
+            display: flex;
+            align-items: center;
+            margin-left: 279px;
+            font-family: cursive;
+            font-size: larger;
+            font-weight: bolder;
+        }
+
+        .con {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+
+        #ola {
+            margin: 25px;
+        }
+
+
+
+
+        .uber {
+            display: flex;
+            overflow: scroll;
+        }
+
+
+
+        .pola {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+        .mow {
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+            align-items: center;
+            height: fit-content;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-right: 60px;
+
+
+        }
+
+        #e-mail {
+            width: 660px;
+            font-size: 17px;
+            font-family: monospace;
+            font-weight: bolder;
+            font-style: oblique;
+            border-radius: 7px;
+            height: 60px;
+            margin-bottom: 8px;
+            border: 2px solid black;
+        }
+
+        #msg {
+            width: 660px;
+            border-radius: 5px;
+            height: 60px;
+            font-size: 17px;
+            font-family: monospace;
+            font-weight: bolder;
+            font-style: oblique;
+            border-radius: 7px;
+            margin-bottom: 8px;
+            border: 2px solid black;
+
+
+        }
+
+        #btn {
+            cursor: pointer;
+            width: fit-content;
+            font-size: 20px;
+            padding: 8px;
+            border-radius: 6px;
+            font-family: cursive;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: -3px;
+            border: 2px solid black;
+            background-color: red;
+            color: white;
+
+        }
+
+
+
+
+        #btn:hover {
+            font-weight: bolder;
+            color: red;
+            background-color: black;
+        }
+
+        .low {
+            width: 100%;
+            display: flex;
+            justify-content: right;
+            height: fit-content;
+
+
+        }
+
+        #ok {
+            width: 660px;
+            font-size: 17px;
+            font-family: monospace;
+            font-weight: bolder;
+            font-style: oblique;
+            border-radius: 7px;
+            height: 60px;
+            margin-bottom: 8px;
+            border: 2px solid black;
+
+        }
+
+        .about {
+            border: 1px solid black;
+            margin-top: 25px;
+
+        }
+
+        #pilo {
+            margin: 25px;
+        }
+
+        .khelo {
+
+            padding-top: 20px;
+            width: 40vw;
+            display: flex;
+            margin-left: 25px;
+        }
+
+        .put {
+            height: 314px;
+            padding-bottom: 25px;
+        }
+
+
+
+        .put img {
+            width: 35vw;
+            height: 44vh;
+            margin-left: 200px;
+
+
+
+
+        }
+
+        .raj {
+
+            display: flex;
+
+
+        }
+
+        .gama img {
+            width: 30vw;
+            margin-top: 20px;
+            margin-right: 225px;
+        }
+
+        #number {
+
+            width: 660px;
+            font-size: 17px;
+            font-family: monospace;
+            font-weight: bolder;
+            font-style: oblique;
+            border-radius: 7px;
+            height: 60px;
+            margin-bottom: 8px;
+            border: 2px solid black;
+
+        }
+
+        .laura {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+
+            <img id="lol" src="img/zomato.avif" alt="loading">
+
+            <ul>
+                <li><a href="#">Home</a> </li>
+                <li><a href="#">Products</a> </li>
+                <li><a href="#">About</a> </li>
+                <li><a href="#">Contact</a> </li>
+            </ul>
+            <div class="search">
+                <input type="text" name="" id="a" placeholder="Search">
+                <button id="b">Search</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="slider">
+                <img src="https://source.unsplash.com/1600x500/?food,food" alt="loading" width="1300px">
+
+            </div>
+            <div class="box1">
+
+                <h2 id="ola">Products</h2>
+                <div class="uber">
+                    <div class="meow">
+                        <img src="https://source.unsplash.com/150x150/?food,ice-cream" alt="loading">
+                        <div class="pola">
+                            <p>Ice-Cream</p>
+
+                            <p>price Rs 300/-</p>
+                            <p> Qty :- 1 </p>
+                            <p></p>
+                            <button>Shop Now</button>
+                        </div>
+                    </div>
+
+                    <div class="meow">
+                        <img src="https://source.unsplash.com/150x150/?food,egg curry" alt="loading">
+                        <div class="pola">
+                            <p>Egg Curry</p>
+
+                            <p>price Rs 500/-</p>
+                            <p> Full Plate</p>
+                            <p></p>
+                            <button>Shop Now</button>
+                        </div>
+                    </div>
+                    <div class="meow">
+                        <img src="https://source.unsplash.com/150x150/?food,fish curry" alt="loading">
+                        <div class="pola">
+                            <p>Fish Curry</p>
+
+                            <p>price Rs 400/- </p>
+                            <p> Full Plate</p>
+                            <p></p>
+                            <button>Shop Now</button>
+                        </div>
+                    </div>
+                    <div class="meow">
+                        <img src="https://source.unsplash.com/150x150/?food,cake" alt="loading">
+                        <div class="pola">
+                            <p>Cake</p>
+
+                            <p>price Rs 800/-</p>
+                            <p> Qty :- 1 </p>
+                            <p></p>
+                            <button>Shop Now</button>
+
+                        </div>
+                    </div>
+                    <div class="meow">
+                        <img src="https://source.unsplash.com/150x150/?food,red wine" alt="loading">
+                        <div class="pola">
+                            <p>Red Wine</p>
+
+                            <p>price Rs 1000/-</p>
+                            <p> Qty :- 1 </p>
+                            <p></p>
+                            <button>Shop Now</button>
+
+                        </div>
+                    </div>
+                    <div class="meow">
+                        <img src="https://source.unsplash.com/150x150/?food,chicken curry" alt="loading">
+                        <div class="pola">
+                            <p>Chicken Curry</p>
+
+                            <p>price Rs 600/-</p>
+                            <p> Full Plate</p>
+                            <p></p>
+                            <button>Shop Now</button>
+                        </div>
+                    </div>
+                    <div class="meow">
+                        <img src="https://source.unsplash.com/150x150/?food,matter panner" alt="loading">
+                        <div class="pola">
+                            <p>Matter Panner</p>
+
+                            <p>price Rs 300/-</p>
+                            <p> Full Plate</p>
+                            <p></p>
+                            <button>Shop Now</button>
+                        </div>
+                    </div>
+                    <div class="meow">
+                        <img src="https://source.unsplash.com/150x150/?food,burger" alt="loading">
+                        <div class="pola">
+                            <p>Burger</p>
+
+                            <p>price Rs 250/-</p>
+                            <p> Qty :- 1 </p>
+                            <p></p>
+                            <button>Shop Now</button>
+                        </div>
+                    </div>
+                    <div class="meow">
+                        <img src="https://source.unsplash.com/150x150/?food,pizza" alt="loading">
+                        <div class="pola">
+                            <p>pizza</p>
+
+                            <p>price Rs 200/-</p>
+                            <p> Qty :- 1 </p>
+                            <p></p>
+                            <button>Shop Now</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="about">
+
+
+            <h2 id="pilo">Abouts</h2>
+
+            <div class="raj">
+
+                <div class="khelo">
+                    Launched in 2023, Our technology platform connects customers, restaurant partners and delivery
+                    partners,
+                    serving their multiple needs. Customers use our platform to search and discover restaurants, read
+                    and
+                    write customer generated reviews and view and upload photos, order food delivery, book a table and
+                    make
+                    payments while dining-out at restaurants. On the other hand, we provide restaurant partners with
+                    industry-specific marketing tools which enable them to engage and acquire customers to grow their
+                    business while also providing a reliable and efficient last mile delivery service. We also operate a
+                    one-stop procurement solution, Hyperpure, which supplies high quality ingredients and kitchen
+                    products
+                    to restaurant partners. We also provide our delivery partners with transparent and flexible earning
+                    opportunities.
+                </div>
+
+                <div class="put">
+                    <img src="https://b.zmtcdn.com/web/about/a7b0a36d5107f3590895981dab2eeac31563208212.jpeg?output-format=webp"
+                        alt="loading">
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+        <div class="hello">
+            <p id="kya">Contact Us</p>
+            <div class="con">
+                <div class="low">
+                    <div class="gama">
+                        <img src="https://www.nicepng.com/png/detail/82-829775_contact-phone-and-email-icon-png.png"
+                            alt="loading">
+                    </div>
+
+                    <div class="mow">
+                        <form action="#">
+                            <div class="bro">
+                                <input type="text" name="search" id="ok" placeholder="Enter Your Name" required>
+                            </div>
+                            <div class="email">
+                                <input type="email" name="email" id="e-mail" placeholder="Enter Your Email" required>
+                            </div>
+                            <div class="num">
+                                <input type="number" name="" id="number" placeholder="Enter Your Number">
+                            </div>
+                            <div class="om">
+                                <input type="text" name="message" id="msg" placeholder="Type your Message "
+                                    required></textarea>
+                            </div>
+                            <div class="laura">
+                                <button id="btn">Submit</button>
+
+                            </div>
+
+
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </main>
+
+    <footer>
+        <p> CopyRight &copy; All Rights Reserved </p>
+
+
+    </footer>
+</body>
+
+</html>
